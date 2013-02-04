@@ -1,6 +1,7 @@
 package ivan.davidov.investor.rssreader;
 
 import ivan.davidov.investor.rssreader.reader.RssReader;
+import ivan.davidov.investor.rssreader.util.CommonStringsHelper;
 import ivan.davidov.investor.rssreader.widget.RssWidget;
 
 import java.util.ArrayList;
@@ -26,7 +27,8 @@ public class RssActivity extends ListActivity {
 		List<JSONObject> jobs = new ArrayList<JSONObject>();
 		
 		try {
-			jobs = RssReader.getLatestRssFeed(this);			
+			CommonStringsHelper res = new CommonStringsHelper(this.getResources());
+			jobs = RssReader.getLatestRssFeed(res);			
 		} catch (Exception e) {
 			Log.e("RSS ERROR", "Error loading RSS Feed Stream >> " + e.getMessage() + " //" + e.toString());
 		}

@@ -3,6 +3,11 @@
  */
 package ivan.davidov.dnes.rssreader.reader;
 
+import ivan.davidov.dnes.rssreader.R;
+import ivan.davidov.dnes.rssreader.util.Article;
+import ivan.davidov.dnes.rssreader.util.CommonStringsHelper;
+import ivan.davidov.dnes.rssreader.util.RSSHandler;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.DateFormat;
@@ -16,14 +21,8 @@ import java.util.Locale;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import android.app.Activity;
-import android.content.res.Resources;
 import android.text.Html;
 import android.util.Log;
-
-import ivan.davidov.dnes.rssreader.R;
-import ivan.davidov.dnes.rssreader.util.Article;
-import ivan.davidov.dnes.rssreader.util.RSSHandler;
 
 /**
  * @author Ivan Davidov
@@ -45,22 +44,9 @@ public class RssReader
 	 * 
 	 * @return List<JSONObject> - suitable for the List View activity
 	 */
-	public static List<JSONObject> getLatestRssFeed(Object source)
-	{
-		String feed = null;
-		
-		if(source instanceof String)
-		{
-			feed = (String)source;
-		}
-		else
-		{
-			Activity activity = (Activity)source;
-			
-			Resources res = activity.getResources();
-			
-			feed = res.getString(R.string.rss_url);
-		}
+	public static List<JSONObject> getLatestRssFeed(CommonStringsHelper res)
+	{		
+		String feed = res.getString(R.string.rss_url);
  		
 		RSSHandler rh = new RSSHandler();
 		List<Article> articles =  rh.getLatestArticles(feed);
@@ -70,9 +56,9 @@ public class RssReader
 			Article article = new Article();
 			
 			article.setArticleId(-9999);
-			article.setTitle("В момента новините не са достъпни");
-			article.setDescription("Възможно е да нямате интернет връзка.");
-			article.setPubDate("За контакти: davidov.i@gmail.com");
+			article.setTitle(res.getString(R.string.rss_unavailable_title));
+			article.setDescription(res.getString(R.string.rss_unavailable_description));
+			article.setPubDate(res.getString(R.string.rss_unavailable_date));
 			article.setUrl(null);
 			
 			articles.add(article);
@@ -82,12 +68,12 @@ public class RssReader
 			Article article = new Article();
 			
 			article.setArticleId(-9999);
-			article.setTitle("Иван Давидов - софтуерен инженер");
-			article.setDescription("Посетете профила на Иван Давидов в професионалната мрежа LinkedIn");
-			article.setPubDate("За контакти: davidov.i@gmail.com");
+			article.setTitle(res.getString(R.string.author_title));
+			article.setDescription(res.getString(R.string.author_description));
+			article.setPubDate(res.getString(R.string.author_date));
 			
 			try {
-				article.setUrl(new URL("http://bg.linkedin.com/in/ivandavidov"));
+				article.setUrl(new URL(res.getString(R.string.author_url)));
 			} catch (MalformedURLException e) {
 				// Oops... fallback to default.
 				article.setUrl(null);

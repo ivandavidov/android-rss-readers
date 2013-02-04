@@ -3,6 +3,7 @@ package ivan.davidov.investor.rssreader.widget;
 import ivan.davidov.investor.rssreader.R;
 import ivan.davidov.investor.rssreader.RssActivity;
 import ivan.davidov.investor.rssreader.reader.RssReader;
+import ivan.davidov.investor.rssreader.util.CommonStringsHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,8 +30,8 @@ public class RssWidget extends AppWidgetProvider
 		List<JSONObject> jobs = new ArrayList<JSONObject>();
 		
 		try {
-			String rssFeed = context.getString(R.string.rss_url);
-			jobs = RssReader.getLatestRssFeed(rssFeed);			
+			CommonStringsHelper res = new CommonStringsHelper(context);
+			jobs = RssReader.getLatestRssFeed(res);			
 		} catch (Exception e) {
 			Log.e("RSS ERROR", "Error loading RSS Feed Stream >> " + e.getMessage() + " //" + e.toString());
 		}		
