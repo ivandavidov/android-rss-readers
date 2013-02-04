@@ -3,6 +3,13 @@
     <string name="app_name">Новини от Investor.bg</string>
     <string name="rss_url">http://www.investor.bg/news/rss/top.html</string>
     <string name="default_text">Новините се зареждат&#8230;</string>
+    <string name="rss_unavailable_title">В момента новините не са достъпни</string>
+    <string name="rss_unavailable_description">Възможно е да нямате интернет връзка.</string>
+    <string name="rss_unavailable_date">За контакти: davidov.i@gmail.com</string>
+    <string name="author_title">Иван Давидов - софтуерен инженер</string>
+    <string name="author_description">Посетете профила на Иван Давидов в професионалната мрежа LinkedIn</string>
+    <string name="author_date">За контакти: davidov.i@gmail.com</string>
+    <string name="author_url">http://bg.linkedin.com/in/ivandavidov</string>
     <color name="background">#F0F0F0</color>
     <color name="stroke">#808080</color>
     <color name="text">#186E1A</color>
