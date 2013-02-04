@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Новини от Dnes.bg</string>
+    <string name="rss_url">http://www.dnes.bg/rss.php?today</string>
+    <string name="default_text">Новините се зареждат&#8230;</string>
+    <color name="background">#F0F0F0</color>
+    <color name="stroke">#808080</color>
+    <color name="text">#6E181A</color>
+</resources>
