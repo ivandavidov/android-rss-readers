@@ -4,25 +4,19 @@
 	android:orientation="horizontal"
 	android:layout_width="fill_parent"
 	android:layout_height="wrap_content"
-	android:layout_marginTop="0dip"
-	android:layout_marginBottom="0dip"
-	android:layout_marginLeft="5dip"
-	android:layout_marginRight="5dip"
+	android:layout_marginTop="1dip"
+	android:layout_marginBottom="1dip"
+	android:layout_marginLeft="1dip"
+	android:layout_marginRight="1dip"
 	android:background="@layout/rounded">
-
-	<ImageView android:id="@+id/last_build_stat"
-		android:layout_width="wrap_content" 
-		android:layout_height="wrap_content"
-		android:paddingTop="5dip"
-		android:paddingRight="3dip" />
 
 	<TextView android:id="@+id/job_text" 
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content" 
 		android:textColor="@color/text"
-		android:paddingTop="5dip"
-		android:paddingBottom="5dip" 
-		android:paddingLeft="5dip"
-		android:paddingRight="5dip" />
+		android:paddingTop="4dip"
+		android:paddingBottom="4dip" 
+		android:paddingLeft="4dip"
+		android:paddingRight="4dip" />
 
 </LinearLayout>
