@@ -4,7 +4,7 @@
     <string name="rss_url">http://www.dnes.bg/rss.php?today</string>
     <string name="default_text">Новините се зареждат&#8230;</string>
     <string name="rss_unavailable_title">В момента новините не са достъпни</string>
-    <string name="rss_unavailable_description">Възможно е да нямате интернет връзка.</string>
+    <string name="rss_unavailable_description">Възможно е да нямате интернет връзка или сайтът да е офлайн.</string>
     <string name="rss_unavailable_date">За контакти: davidov.i@gmail.com</string>
     <string name="author_title">Иван Давидов - софтуерен инженер</string>
     <string name="author_description">Посетете профила на Иван Давидов в професионалната мрежа LinkedIn</string>
