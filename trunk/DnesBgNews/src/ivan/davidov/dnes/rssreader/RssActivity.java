@@ -37,7 +37,7 @@ public class RssActivity extends ListActivity {
 
 		setListAdapter(adapter);
 		
-		setTitle(R.string.app_name);
+		setTitle(R.string.loaded_text);
 		
 		AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(this);
 		

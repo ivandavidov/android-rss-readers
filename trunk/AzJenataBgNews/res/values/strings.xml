@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Новини от Az-jenata.bg</string>
+    <string name="app_name">Az-jenata.bg</string>
     <string name="rss_url">http://www.az-jenata.bg/rss/show/latest.html</string>
     <string name="default_text">Новините се зареждат&#8230;</string>
+    <string name="loaded_text">Новини от Az-jenata.bg</string>
     <string name="rss_unavailable_title">В момента новините не са достъпни</string>
     <string name="rss_unavailable_description">Възможно е да нямате интернет връзка или сайтът да е офлайн.</string>
     <string name="rss_unavailable_date">За контакти: davidov.i@gmail.com</string>
