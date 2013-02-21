@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Gol.bg</string>
+    <string name="app_name">Спорт</string>
     <string name="rss_url">http://www.gol.bg/rss.php?last</string>
     <string name="default_text">Новините се зареждат&#8230;</string>
     <string name="loaded_text">Новини от Gol.bg</string>
