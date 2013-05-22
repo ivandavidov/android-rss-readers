@@ -46,26 +46,19 @@ public class RssWidget extends AppWidgetProvider
         try {
         	Spanned text = null;
         	
-        	if(jobs.size() < 4)
-        	{
-	        	text = (Spanned)jobs.get(0).get("text");	        	
+        	StringBuffer sb = new StringBuffer();
+        	
+        	for(int i = 0; i < jobs.size(); i++)
+        	{        		
+        		if(i > 0)
+        		{
+        			sb.append(RssReader.PARAGRAPH);
+        		}
+        		
+        		sb.append(jobs.get(i).get("title"));            		
         	}
-        	else
-        	{
-            	StringBuffer sb = new StringBuffer();
-            	
-            	for(int i = 0; i < 3; i++)            		
-            	{        		
-            		if(i > 0)
-            		{
-            			sb.append(RssReader.PARAGRAPH);
-            		}
-            		
-            		sb.append(jobs.get(i).get("title"));            		
-            	}
-            	
-            	text = Html.fromHtml(sb.toString());
-        	}
+        	
+        	text = Html.fromHtml(sb.toString());
         	
 			remoteViews.setTextViewText(R.id.job_text, text);
 			
