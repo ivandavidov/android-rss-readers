@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Спорт</string>
+    <string name="rss_url">http://www.sportal.bg/uploads/rss_category_0.xml</string>
+    <string name="default_text">Новините се зареждат&#8230;</string>
+    <string name="loaded_text">Новини от Sportal.bg</string>
+    <string name="rss_unavailable_title">В момента новините не са достъпни</string>
+    <string name="rss_unavailable_description">Възможно е да нямате интернет връзка или сайтът да е офлайн.</string>
+    <string name="rss_unavailable_date">За контакти: davidov.i@gmail.com</string>
+    <string name="author_title">Иван Давидов - софтуерен инженер</string>
+    <string name="author_description">Посетете профила на Иван Давидов в професионалната мрежа LinkedIn</string>
+    <string name="author_date">За контакти: davidov.i@gmail.com</string>
+    <string name="author_url">http://bg.linkedin.com/in/ivandavidov</string>
+    <color name="background">#F0F0F0</color>
+    <color name="stroke">#808080</color>
+    <color name="text">#AF4000</color>
+</resources>

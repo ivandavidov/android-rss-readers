@@ -1,12 +1,12 @@
 /**
  * 
  */
-package ivan.davidov.profit.rssreader.reader;
+package ivan.davidov.woman.rssreader.reader;
 
-import ivan.davidov.profit.rssreader.R;
-import ivan.davidov.profit.rssreader.util.Article;
-import ivan.davidov.profit.rssreader.util.CommonStringsHelper;
-import ivan.davidov.profit.rssreader.util.RSSHandler;
+import ivan.davidov.woman.rssreader.R;
+import ivan.davidov.woman.rssreader.util.Article;
+import ivan.davidov.woman.rssreader.util.CommonStringsHelper;
+import ivan.davidov.woman.rssreader.util.RSSHandler;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -127,7 +127,8 @@ public class RssReader
 		if(date != null && date.length() > 0)
 		{
 			DateFormat[] rssFormatters = {new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss zzz", Locale.UK),
-										  new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ", Locale.UK)};
+										  new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ", Locale.UK),
+										  new SimpleDateFormat("yyyyMMddHHmmss", Locale.UK)};
 			
 			DateFormat bulFormatter = new SimpleDateFormat("dd-MM-yyyy HH:mm", Locale.US);
 			

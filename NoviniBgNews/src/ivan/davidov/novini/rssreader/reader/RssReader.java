@@ -1,12 +1,12 @@
 /**
  * 
  */
-package ivan.davidov.profit.rssreader.reader;
+package ivan.davidov.novini.rssreader.reader;
 
-import ivan.davidov.profit.rssreader.R;
-import ivan.davidov.profit.rssreader.util.Article;
-import ivan.davidov.profit.rssreader.util.CommonStringsHelper;
-import ivan.davidov.profit.rssreader.util.RSSHandler;
+import ivan.davidov.novini.rssreader.R;
+import ivan.davidov.novini.rssreader.util.Article;
+import ivan.davidov.novini.rssreader.util.CommonStringsHelper;
+import ivan.davidov.novini.rssreader.util.RSSHandler;
 
 import java.net.MalformedURLException;
 import java.net.URL;
