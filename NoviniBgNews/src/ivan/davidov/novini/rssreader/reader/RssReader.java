@@ -176,7 +176,7 @@ public class RssReader
 		}
 		else
 		{
-			urlString = article.getUrl().toString();
+			urlString = "http://m.novini.bg/news.php?id=" + article.getUrl().toString().split("/")[4].split("-")[0];
 		}
 		
 		current.put("url", urlString);
